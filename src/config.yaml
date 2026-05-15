@@ -1,0 +1,19 @@
+data:
+  raw_pcap_dir: data/raw/pcaps/
+
+capture:
+  interface: en0
+
+  attack_types:
+    - normal
+    - port_scan
+    - ddos
+    - brute_force
+    - dns_exfil
+
+  label_map:
+    normal: 0
+    port_scan: 1
+    ddos: 2
+    brute_force: 3
+    dns_exfil: 4
